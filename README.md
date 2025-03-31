@@ -2,7 +2,7 @@
 
 # 🛍️ **E-Commerce Product Landing Page** 🛍️
 
-#### 🌟 **Live Preview** → [**E-Commerce Product Landing Page**](https://pollmasterapp.netlify.app/) 💕
+#### 🌟 **Live Preview** → [**E-Commerce Product Landing Page**](https://ecommerceproductlandingpage.netlify.app/) 💕
 
 🚀 **Explore the experience and grab your favorite products!** 🎉
 
