@@ -1,0 +1,795 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Premium Headphones - Experience Sound Like Never Before</title>
+    <link
+      href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.0-alpha1/dist/css/bootstrap.min.css"
+      rel="stylesheet"
+    />
+    <link
+      rel="stylesheet"
+      href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.0.0/css/all.min.css"
+    />
+    <link rel="stylesheet" href="css/style.css" />
+  </head>
+  <body>
+    <!-- Navigation -->
+    <nav class="navbar navbar-expand-lg navbar-light bg-light fixed-top">
+      <div class="container">
+        <a class="navbar-brand" href="#">SoundWave</a>
+        <button
+          class="navbar-toggler"
+          type="button"
+          data-bs-toggle="collapse"
+          data-bs-target="#navbarNav"
+          aria-label="Toggle navigation"
+        >
+          <span class="navbar-toggler-icon"></span>
+        </button>
+        <div class="collapse navbar-collapse" id="navbarNav">
+          <ul class="navbar-nav ms-auto">
+            <li class="nav-item"><a class="nav-link" href="#home">Home</a></li>
+            <li class="nav-item">
+              <a class="nav-link" href="#products">Products</a>
+            </li>
+            <li class="nav-item">
+              <a class="nav-link" href="#reviews">Reviews</a>
+            </li>
+            <li class="nav-item"><a class="nav-link" href="#faq">FAQ</a></li>
+            <li class="nav-item">
+              <a class="nav-link" href="#contact">Contact</a>
+            </li>
+            <li class="nav-item">
+              <a class="nav-link" href="#"
+                ><i class="fas fa-shopping-cart"></i>
+                <span id="cart-count">0</span></a
+              >
+            </li>
+          </ul>
+        </div>
+      </div>
+    </nav>
+
+    <!-- Hero Section -->
+    <section id="home" class="hero-section">
+      <div class="container">
+        <div class="row align-items-center">
+          <div class="col-md-6">
+            <h1 class="display-4 fw-bold">
+              Experience Sound Like Never Before
+            </h1>
+            <p class="lead">
+              Our premium noise-cancelling headphones deliver crystal clear
+              audio quality and comfort for hours of listening.
+            </p>
+            <div class="hero-cta">
+              <a href="#products" class="btn btn-primary btn-lg">Shop Now</a>
+              <div class="mt-3 deal-countdown">
+                <p>
+                  Limited Time Offer:
+                  <span class="fw-bold text-danger">20% OFF</span>
+                </p>
+                <div id="countdown" class="d-flex">
+                  <div class="countdown-item">
+                    <span id="days">00</span>Days
+                  </div>
+                  <div class="countdown-item">
+                    <span id="hours">00</span>Hrs
+                  </div>
+                  <div class="countdown-item">
+                    <span id="minutes">00</span>Mins
+                  </div>
+                  <div class="countdown-item">
+                    <span id="seconds">00</span>Secs
+                  </div>
+                </div>
+              </div>
+            </div>
+          </div>
+          <div class="col-md-6">
+            <img
+              src="data:image/svg+xml,%3Csvg xmlns='http://www.w3.org/2000/svg' width='600' height='400' viewBox='0 0 600 400' preserveAspectRatio='none'%3E%3Crect width='600' height='400' fill='%23f8f9fa'/%3E%3Cpath d='M300,190 C300,150 340,120 390,120 C440,120 480,150 480,190 C480,230 440,260 390,260 C375,260 360,255 350,245 L350,260 L300,260 Z' fill='%233a86ff'/%3E%3Ctext x='300' y='300' font-family='Arial' font-size='24' text-anchor='middle' fill='%23333333'%3EPremium Headphones%3C/text%3E%3C/svg%3E"
+              alt="Premium Headphones"
+              class="img-fluid hero-img"
+            />
+          </div>
+        </div>
+      </div>
+    </section>
+
+    <!-- Product Showcase -->
+    <section id="products" class="product-showcase">
+      <div class="container">
+        <h2 class="text-center mb-5">Featured Products</h2>
+        <div class="row">
+          <div class="col-md-8 mx-auto">
+            <div class="product-main">
+              <h3>SoundWave Pro X9</h3>
+              <div class="product-gallery">
+                <div class="main-image-container">
+                  <img
+                    id="main-product-image"
+                    src="data:image/svg+xml,%3Csvg xmlns='http://www.w3.org/2000/svg' width='800' height='600' viewBox='0 0 800 600' preserveAspectRatio='none'%3E%3Crect width='800' height='600' fill='%23f8f9fa'/%3E%3Cpath d='M400,250 C400,200 455,160 525,160 C595,160 650,200 650,250 C650,300 595,340 525,340 C505,340 485,335 470,325 L470,340 L400,340 Z' fill='%233a86ff'/%3E%3Ctext x='400' y='400' font-family='Arial' font-size='32' text-anchor='middle' fill='%23333333'%3ESoundWave Pro X9%3C/text%3E%3C/svg%3E"
+                    alt="SoundWave Pro X9"
+                    class="img-fluid"
+                  />
+                  <div class="image-zoom-lens" id="lens"></div>
+                </div>
+                <div class="zoom-result" id="zoom-result"></div>
+                <div class="thumbnail-gallery">
+                  <img
+                    src="data:image/svg+xml,%3Csvg xmlns='http://www.w3.org/2000/svg' width='100' height='100' viewBox='0 0 100 100' preserveAspectRatio='none'%3E%3Crect width='100' height='100' fill='%23f8f9fa'/%3E%3Ctext x='50' y='50' font-family='Arial' font-size='12' text-anchor='middle' fill='%233a86ff'%3EView 1%3C/text%3E%3C/svg%3E"
+                    alt="Product View 1"
+                    class="img-thumbnail product-thumbnail active"
+                  />
+                  <img
+                    src="data:image/svg+xml,%3Csvg xmlns='http://www.w3.org/2000/svg' width='100' height='100' viewBox='0 0 100 100' preserveAspectRatio='none'%3E%3Crect width='100' height='100' fill='%23f0f0f0'/%3E%3Ctext x='50' y='50' font-family='Arial' font-size='12' text-anchor='middle' fill='%233a86ff'%3EView 2%3C/text%3E%3C/svg%3E"
+                    alt="Product View 2"
+                    class="img-thumbnail product-thumbnail"
+                  />
+                  <img
+                    src="data:image/svg+xml,%3Csvg xmlns='http://www.w3.org/2000/svg' width='100' height='100' viewBox='0 0 100 100' preserveAspectRatio='none'%3E%3Crect width='100' height='100' fill='%23e8e8e8'/%3E%3Ctext x='50' y='50' font-family='Arial' font-size='12' text-anchor='middle' fill='%233a86ff'%3EView 3%3C/text%3E%3C/svg%3E"
+                    alt="Product View 3"
+                    class="img-thumbnail product-thumbnail"
+                  />
+                  <img
+                    src="data:image/svg+xml,%3Csvg xmlns='http://www.w3.org/2000/svg' width='100' height='100' viewBox='0 0 100 100' preserveAspectRatio='none'%3E%3Crect width='100' height='100' fill='%23e0e0e0'/%3E%3Ctext x='50' y='50' font-family='Arial' font-size='12' text-anchor='middle' fill='%233a86ff'%3EView 4%3C/text%3E%3C/svg%3E"
+                    alt="Product View 4"
+                    class="img-thumbnail product-thumbnail"
+                  />
+                </div>
+              </div>
+              <div class="product-info">
+                <div class="product-rating">
+                  <span class="stars">
+                    <i class="fas fa-star"></i>
+                    <i class="fas fa-star"></i>
+                    <i class="fas fa-star"></i>
+                    <i class="fas fa-star"></i>
+                    <i class="fas fa-star-half-alt"></i>
+                  </span>
+                  <span class="rating-count">(128 reviews)</span>
+                </div>
+                <p class="product-description">
+                  Experience audio like never before with our flagship
+                  noise-cancelling headphones. Features include 40 hours of
+                  battery life, premium comfort ear cushions, and studio-quality
+                  sound.
+                </p>
+                <div class="product-price">
+                  <span class="old-price">$399.99</span>
+                  <span class="current-price">$319.99</span>
+                </div>
+                <div class="product-variants">
+                  <div class="variant-group">
+                    <label>Color:</label>
+                    <div class="color-options">
+                      <button
+                        class="color-option active"
+                        data-color="black"
+                        style="background-color: #000"
+                        aria-label="Black color option"
+                      ></button>
+                      <button
+                        class="color-option"
+                        data-color="white"
+                        style="background-color: #fff; border: 1px solid #ddd"
+                        aria-label="White color option"
+                      ></button>
+                      <button
+                        class="color-option"
+                        data-color="blue"
+                        style="background-color: #0066cc"
+                        aria-label="Blue color option"
+                      ></button>
+                      <button
+                        class="color-option"
+                        data-color="red"
+                        style="background-color: #cc0000"
+                        aria-label="Red color option"
+                      ></button>
+                    </div>
+                  </div>
+                </div>
+                <button
+                  class="btn btn-primary btn-lg w-100 add-to-cart"
+                  data-product-id="1"
+                >
+                  Add to Cart
+                </button>
+              </div>
+            </div>
+          </div>
+        </div>
+
+        <div class="related-products mt-5">
+          <h3 class="text-center mb-4">You May Also Like</h3>
+          <div class="row">
+            <div class="col-md-4">
+              <div class="card product-card">
+                <img
+                  src="data:image/svg+xml,%3Csvg xmlns='http://www.w3.org/2000/svg' width='300' height='200' viewBox='0 0 300 200' preserveAspectRatio='none'%3E%3Crect width='300' height='200' fill='%23f8f9fa'/%3E%3Cpath d='M150,80 C150,60 170,45 195,45 C220,45 240,60 240,80 C240,100 220,115 195,115 C188,115 180,113 175,108 L175,115 L150,115 Z' fill='%233a86ff'/%3E%3Ctext x='150' y='150' font-family='Arial' font-size='16' text-anchor='middle' fill='%23333333'%3ESoundWave Air%3C/text%3E%3C/svg%3E"
+                  class="card-img-top"
+                  alt="SoundWave Air"
+                />
+                <div class="card-body">
+                  <h5 class="card-title">SoundWave Air</h5>
+                  <div class="product-rating small">
+                    <i class="fas fa-star"></i>
+                    <i class="fas fa-star"></i>
+                    <i class="fas fa-star"></i>
+                    <i class="fas fa-star"></i>
+                    <i class="far fa-star"></i>
+                    <span>(85)</span>
+                  </div>
+                  <p class="card-text">
+                    Wireless earbuds with noise isolation and 24-hour battery
+                    life.
+                  </p>
+                  <p class="product-price">$149.99</p>
+                  <button
+                    class="btn btn-outline-primary w-100 add-to-cart"
+                    data-product-id="2"
+                  >
+                    Add to Cart
+                  </button>
+                </div>
+              </div>
+            </div>
+            <div class="col-md-4">
+              <div class="card product-card">
+                <img
+                  src="data:image/svg+xml,%3Csvg xmlns='http://www.w3.org/2000/svg' width='300' height='200' viewBox='0 0 300 200' preserveAspectRatio='none'%3E%3Crect width='300' height='200' fill='%23f0f0f0'/%3E%3Cpath d='M150,80 C150,60 170,45 195,45 C220,45 240,60 240,80 C240,100 220,115 195,115 C188,115 180,113 175,108 L175,115 L150,115 Z' fill='%233a86ff'/%3E%3Ctext x='150' y='150' font-family='Arial' font-size='16' text-anchor='middle' fill='%23333333'%3ESoundWave Sport%3C/text%3E%3C/svg%3E"
+                  class="card-img-top"
+                  alt="SoundWave Sport"
+                />
+                <div class="card-body">
+                  <h5 class="card-title">SoundWave Sport</h5>
+                  <div class="product-rating small">
+                    <i class="fas fa-star"></i>
+                    <i class="fas fa-star"></i>
+                    <i class="fas fa-star"></i>
+                    <i class="fas fa-star"></i>
+                    <i class="fas fa-star-half-alt"></i>
+                    <span>(116)</span>
+                  </div>
+                  <p class="card-text">
+                    Sweat-resistant earbuds designed for athletes and fitness
+                    enthusiasts.
+                  </p>
+                  <p class="product-price">$129.99</p>
+                  <button
+                    class="btn btn-outline-primary w-100 add-to-cart"
+                    data-product-id="3"
+                  >
+                    Add to Cart
+                  </button>
+                </div>
+              </div>
+            </div>
+            <div class="col-md-4">
+              <div class="card product-card">
+                <img
+                  src="data:image/svg+xml,%3Csvg xmlns='http://www.w3.org/2000/svg' width='300' height='200' viewBox='0 0 300 200' preserveAspectRatio='none'%3E%3Crect width='300' height='200' fill='%23e8e8e8'/%3E%3Cpath d='M150,80 C150,60 170,45 195,45 C220,45 240,60 240,80 C240,100 220,115 195,115 C188,115 180,113 175,108 L175,115 L150,115 Z' fill='%233a86ff'/%3E%3Ctext x='150' y='150' font-family='Arial' font-size='16' text-anchor='middle' fill='%23333333'%3ESoundWave Studio%3C/text%3E%3C/svg%3E"
+                  class="card-img-top"
+                  alt="SoundWave Studio"
+                />
+                <div class="card-body">
+                  <h5 class="card-title">SoundWave Studio</h5>
+                  <div class="product-rating small">
+                    <i class="fas fa-star"></i>
+                    <i class="fas fa-star"></i>
+                    <i class="fas fa-star"></i>
+                    <i class="fas fa-star"></i>
+                    <i class="fas fa-star"></i>
+                    <span>(94)</span>
+                  </div>
+                  <p class="card-text">
+                    Professional-grade headphones for music production and
+                    studio work.
+                  </p>
+                  <p class="product-price">$249.99</p>
+                  <button
+                    class="btn btn-outline-primary w-100 add-to-cart"
+                    data-product-id="4"
+                  >
+                    Add to Cart
+                  </button>
+                </div>
+              </div>
+            </div>
+          </div>
+        </div>
+      </div>
+    </section>
+
+    <!-- Testimonials -->
+    <section id="reviews" class="testimonials">
+      <div class="container">
+        <h2 class="text-center mb-5">What Our Customers Say</h2>
+        <div class="row">
+          <div class="col-lg-8 mx-auto">
+            <div
+              id="testimonialCarousel"
+              class="carousel slide"
+              data-bs-ride="carousel"
+            >
+              <div class="carousel-inner">
+                <div class="carousel-item active">
+                  <div class="testimonial-item">
+                    <div class="testimonial-content">
+                      <div class="stars mb-3">
+                        <i class="fas fa-star"></i>
+                        <i class="fas fa-star"></i>
+                        <i class="fas fa-star"></i>
+                        <i class="fas fa-star"></i>
+                        <i class="fas fa-star"></i>
+                      </div>
+                      <p>
+                        "These headphones completely changed my music
+                        experience. The sound quality is unbelievable, and the
+                        noise cancellation works perfectly during my commute."
+                      </p>
+                      <div class="testimonial-user">
+                        <img
+                          src="data:image/svg+xml,%3Csvg xmlns='http://www.w3.org/2000/svg' width='50' height='50' viewBox='0 0 50 50' preserveAspectRatio='none'%3E%3Ccircle cx='25' cy='25' r='20' fill='%23f8f9fa'/%3E%3Ctext x='25' y='30' font-family='Arial' font-size='12' text-anchor='middle' fill='%233a86ff'%3ES%3C/text%3E%3C/svg%3E"
+                          alt="Sarah J."
+                          class="rounded-circle"
+                        />
+                        <div>
+                          <h5>Sarah J.</h5>
+                          <p class="text-muted">Verified Buyer</p>
+                        </div>
+                      </div>
+                    </div>
+                  </div>
+                </div>
+                <div class="carousel-item">
+                  <div class="testimonial-item">
+                    <div class="testimonial-content">
+                      <div class="stars mb-3">
+                        <i class="fas fa-star"></i>
+                        <i class="fas fa-star"></i>
+                        <i class="fas fa-star"></i>
+                        <i class="fas fa-star"></i>
+                        <i class="fas fa-star"></i>
+                      </div>
+                      <p>
+                        "I've tried many premium headphones, but none compare to
+                        the SoundWave Pro X9. The battery life is impressive,
+                        and they're so comfortable I forget I'm wearing them."
+                      </p>
+                      <div class="testimonial-user">
+                        <img
+                          src="data:image/svg+xml,%3Csvg xmlns='http://www.w3.org/2000/svg' width='50' height='50' viewBox='0 0 50 50' preserveAspectRatio='none'%3E%3Ccircle cx='25' cy='25' r='20' fill='%23f0f0f0'/%3E%3Ctext x='25' y='30' font-family='Arial' font-size='12' text-anchor='middle' fill='%233a86ff'%3EM%3C/text%3E%3C/svg%3E"
+                          alt="Michael T."
+                          class="rounded-circle"
+                        />
+                        <div>
+                          <h5>Michael T.</h5>
+                          <p class="text-muted">Verified Buyer</p>
+                        </div>
+                      </div>
+                    </div>
+                  </div>
+                </div>
+                <div class="carousel-item">
+                  <div class="testimonial-item">
+                    <div class="testimonial-content">
+                      <div class="stars mb-3">
+                        <i class="fas fa-star"></i>
+                        <i class="fas fa-star"></i>
+                        <i class="fas fa-star"></i>
+                        <i class="fas fa-star"></i>
+                        <i class="far fa-star"></i>
+                      </div>
+                      <p>
+                        "The audio clarity is amazing for both music and calls.
+                        My only complaint is that the app could use some
+                        improvements, but the headphones themselves are
+                        fantastic."
+                      </p>
+                      <div class="testimonial-user">
+                        <img
+                          src="data:image/svg+xml,%3Csvg xmlns='http://www.w3.org/2000/svg' width='50' height='50' viewBox='0 0 50 50' preserveAspectRatio='none'%3E%3Ccircle cx='25' cy='25' r='20' fill='%23e8e8e8'/%3E%3Ctext x='25' y='30' font-family='Arial' font-size='12' text-anchor='middle' fill='%233a86ff'%3EJ%3C/text%3E%3C/svg%3E"
+                          alt="Jennifer K."
+                          class="rounded-circle"
+                        />
+                        <div>
+                          <h5>Jennifer K.</h5>
+                          <p class="text-muted">Verified Buyer</p>
+                        </div>
+                      </div>
+                    </div>
+                  </div>
+                </div>
+              </div>
+              <button
+                class="carousel-control-prev"
+                type="button"
+                data-bs-target="#testimonialCarousel"
+                data-bs-slide="prev"
+              >
+                <span
+                  class="carousel-control-prev-icon"
+                  aria-hidden="true"
+                ></span>
+                <span class="visually-hidden">Previous</span>
+              </button>
+              <button
+                class="carousel-control-next"
+                type="button"
+                data-bs-target="#testimonialCarousel"
+                data-bs-slide="next"
+              >
+                <span
+                  class="carousel-control-next-icon"
+                  aria-hidden="true"
+                ></span>
+                <span class="visually-hidden">Next</span>
+              </button>
+            </div>
+          </div>
+        </div>
+      </div>
+    </section>
+
+    <!-- FAQ Section -->
+    <section id="faq" class="faq-section">
+      <div class="container">
+        <h2 class="text-center mb-5">Frequently Asked Questions</h2>
+        <div class="row">
+          <div class="col-lg-8 mx-auto">
+            <div class="accordion" id="faqAccordion">
+              <div class="accordion-item">
+                <h2 class="accordion-header" id="headingOne">
+                  <button
+                    class="accordion-button"
+                    type="button"
+                    data-bs-toggle="collapse"
+                    data-bs-target="#collapseOne"
+                    aria-expanded="true"
+                    aria-controls="collapseOne"
+                  >
+                    How long does the battery last?
+                  </button>
+                </h2>
+                <div
+                  id="collapseOne"
+                  class="accordion-collapse collapse show"
+                  aria-labelledby="headingOne"
+                  data-bs-parent="#faqAccordion"
+                >
+                  <div class="accordion-body">
+                    The SoundWave Pro X9 offers up to 40 hours of playback time
+                    with active noise cancellation enabled. With ANC turned off,
+                    you can get up to 60 hours of battery life. A quick
+                    15-minute charge provides up to 5 hours of playback.
+                  </div>
+                </div>
+              </div>
+              <div class="accordion-item">
+                <h2 class="accordion-header" id="headingTwo">
+                  <button
+                    class="accordion-button collapsed"
+                    type="button"
+                    data-bs-toggle="collapse"
+                    data-bs-target="#collapseTwo"
+                    aria-expanded="false"
+                    aria-controls="collapseTwo"
+                  >
+                    Are these headphones water-resistant?
+                  </button>
+                </h2>
+                <div
+                  id="collapseTwo"
+                  class="accordion-collapse collapse"
+                  aria-labelledby="headingTwo"
+                  data-bs-parent="#faqAccordion"
+                >
+                  <div class="accordion-body">
+                    The SoundWave Pro X9 has an IPX4 rating, which means they
+                    are sweat and splash resistant. They can handle light rain
+                    and workouts, but they should not be submerged in water or
+                    exposed to heavy rainfall.
+                  </div>
+                </div>
+              </div>
+              <div class="accordion-item">
+                <h2 class="accordion-header" id="headingThree">
+                  <button
+                    class="accordion-button collapsed"
+                    type="button"
+                    data-bs-toggle="collapse"
+                    data-bs-target="#collapseThree"
+                    aria-expanded="false"
+                    aria-controls="collapseThree"
+                  >
+                    Can I connect to multiple devices simultaneously?
+                  </button>
+                </h2>
+                <div
+                  id="collapseThree"
+                  class="accordion-collapse collapse"
+                  aria-labelledby="headingThree"
+                  data-bs-parent="#faqAccordion"
+                >
+                  <div class="accordion-body">
+                    Yes, the SoundWave Pro X9 supports multipoint connectivity,
+                    allowing you to connect to two devices at the same time. You
+                    can seamlessly switch between your phone and laptop without
+                    having to disconnect and reconnect.
+                  </div>
+                </div>
+              </div>
+              <div class="accordion-item">
+                <h2 class="accordion-header" id="headingFour">
+                  <button
+                    class="accordion-button collapsed"
+                    type="button"
+                    data-bs-toggle="collapse"
+                    data-bs-target="#collapseFour"
+                    aria-expanded="false"
+                    aria-controls="collapseFour"
+                  >
+                    What is your return policy?
+                  </button>
+                </h2>
+                <div
+                  id="collapseFour"
+                  class="accordion-collapse collapse"
+                  aria-labelledby="headingFour"
+                  data-bs-parent="#faqAccordion"
+                >
+                  <div class="accordion-body">
+                    We offer a 30-day satisfaction guarantee. If you're not
+                    completely satisfied with your purchase, you can return it
+                    within 30 days for a full refund or exchange. The product
+                    must be in its original condition with all accessories and
+                    packaging.
+                  </div>
+                </div>
+              </div>
+              <div class="accordion-item">
+                <h2 class="accordion-header" id="headingFive">
+                  <button
+                    class="accordion-button collapsed"
+                    type="button"
+                    data-bs-toggle="collapse"
+                    data-bs-target="#collapseFive"
+                    aria-expanded="false"
+                    aria-controls="collapseFive"
+                  >
+                    How does the noise cancellation work?
+                  </button>
+                </h2>
+                <div
+                  id="collapseFive"
+                  class="accordion-collapse collapse"
+                  aria-labelledby="headingFive"
+                  data-bs-parent="#faqAccordion"
+                >
+                  <div class="accordion-body">
+                    The SoundWave Pro X9 uses advanced active noise cancellation
+                    technology with eight microphones that continuously monitor
+                    and adapt to your environment. The system generates inverse
+                    sound waves to cancel out ambient noise, providing an
+                    immersive listening experience even in noisy environments.
+                  </div>
+                </div>
+              </div>
+            </div>
+          </div>
+        </div>
+      </div>
+    </section>
+
+    <!-- Newsletter & Contact -->
+    <section id="contact" class="contact-section">
+      <div class="container">
+        <div class="row">
+          <div class="col-md-6">
+            <div class="newsletter-box">
+              <h3>Subscribe for Updates</h3>
+              <p>
+                Join our newsletter to receive exclusive offers, new product
+                announcements, and tips to get the most out of your audio gear.
+              </p>
+              <form id="newsletter-form" class="newsletter-form">
+                <div class="input-group mb-3">
+                  <input
+                    type="email"
+                    class="form-control"
+                    placeholder="Your email address"
+                    required
+                  />
+                  <button class="btn btn-primary" type="submit">
+                    Subscribe
+                  </button>
+                </div>
+                <div class="form-check">
+                  <input
+                    class="form-check-input"
+                    type="checkbox"
+                    id="acceptTerms"
+                    required
+                  />
+                  <label class="form-check-label" for="acceptTerms">
+                    I agree to receive promotional emails
+                  </label>
+                </div>
+              </form>
+            </div>
+          </div>
+          <div class="col-md-6">
+            <div class="contact-box">
+              <h3>Contact Us</h3>
+              <p>
+                Have questions or need support? Send us a message and we'll get
+                back to you shortly.
+              </p>
+              <form id="contact-form" class="contact-form">
+                <div class="mb-3">
+                  <input
+                    type="text"
+                    class="form-control"
+                    placeholder="Your Name"
+                    required
+                  />
+                </div>
+                <div class="mb-3">
+                  <input
+                    type="email"
+                    class="form-control"
+                    placeholder="Your Email"
+                    required
+                  />
+                </div>
+                <div class="mb-3">
+                  <select
+                    class="form-select"
+                    aria-label="Select topic for your message"
+                  >
+                    <option selected>Select Topic</option>
+                    <option value="support">Product Support</option>
+                    <option value="order">Order Inquiry</option>
+                    <option value="return">Returns & Refunds</option>
+                    <option value="other">Other</option>
+                  </select>
+                </div>
+                <div class="mb-3">
+                  <textarea
+                    class="form-control"
+                    rows="4"
+                    placeholder="Your Message"
+                    required
+                  ></textarea>
+                </div>
+                <button type="submit" class="btn btn-primary">
+                  Send Message
+                </button>
+              </form>
+            </div>
+          </div>
+        </div>
+      </div>
+    </section>
+
+    <!-- Live Chat -->
+    <div class="live-chat-container">
+      <div class="chat-button" id="chat-button">
+        <i class="fas fa-comments"></i>
+        <span>Chat with Us</span>
+      </div>
+      <div class="chat-box" id="chat-box">
+        <div class="chat-header">
+          <h5>Customer Support</h5>
+          <button class="close-chat" id="close-chat" aria-label="Close chat">
+            &times;
+          </button>
+        </div>
+        <div class="chat-messages" id="chat-messages">
+          <div class="message support">
+            <div class="message-content">
+              <p>Hello! How can I help you today?</p>
+              <span class="message-time">Just now</span>
+            </div>
+          </div>
+        </div>
+        <div class="chat-input">
+          <input
+            type="text"
+            id="chat-input-field"
+            placeholder="Type your message..."
+          />
+          <button id="send-message" aria-label="Send message">
+            <i class="fas fa-paper-plane"></i>
+          </button>
+        </div>
+      </div>
+    </div>
+
+    <!-- Footer -->
+    <footer class="footer">
+      <div class="container">
+        <div class="row">
+          <div class="col-md-4">
+            <h5>SoundWave</h5>
+            <p>
+              Experience premium audio quality with our innovative headphones
+              and audio products.
+            </p>
+            <div class="social-links">
+              <a href="#" aria-label="Facebook"
+                ><i class="fab fa-facebook-f"></i
+              ></a>
+              <a href="#" aria-label="Twitter"
+                ><i class="fab fa-twitter"></i
+              ></a>
+              <a href="#" aria-label="Instagram"
+                ><i class="fab fa-instagram"></i
+              ></a>
+              <a href="#" aria-label="YouTube"
+                ><i class="fab fa-youtube"></i
+              ></a>
+            </div>
+          </div>
+          <div class="col-md-2">
+            <h5>Shop</h5>
+            <ul class="footer-links">
+              <li><a href="#">Headphones</a></li>
+              <li><a href="#">Earbuds</a></li>
+              <li><a href="#">Accessories</a></li>
+              <li><a href="#">Gift Cards</a></li>
+            </ul>
+          </div>
+          <div class="col-md-2">
+            <h5>Support</h5>
+            <ul class="footer-links">
+              <li><a href="#">Help Center</a></li>
+              <li><a href="#">Warranty</a></li>
+              <li><a href="#">Shipping</a></li>
+              <li><a href="#">Returns</a></li>
+            </ul>
+          </div>
+          <div class="col-md-2">
+            <h5>Company</h5>
+            <ul class="footer-links">
+              <li><a href="#">About Us</a></li>
+              <li><a href="#">Careers</a></li>
+              <li><a href="#">Press</a></li>
+              <li><a href="#">Privacy Policy</a></li>
+            </ul>
+          </div>
+          <div class="col-md-2">
+            <h5>Contact</h5>
+            <ul class="footer-links">
+              <li>
+                <a href="mailto:support@soundwave.com">support@soundwave.com</a>
+              </li>
+              <li><a href="tel:1-800-555-0123">1-800-555-0123</a></li>
+            </ul>
+          </div>
+        </div>
+        <div class="row mt-4">
+          <div class="col-12 text-center">
+            <p class="copyright">© 2025 SoundWave(SBC). All rights reserved.</p>
+          </div>
+        </div>
+      </div>
+    </footer>
+
+    <div class="notification" id="notification">
+      <div class="notification-content">
+        <i class="fas fa-check-circle"></i>
+        <span id="notification-message">Product added to cart!</span>
+      </div>
+    </div>
+
+    <!-- Scripts -->
+    <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.0-alpha1/dist/js/bootstrap.bundle.min.js"></script>
+    <script src="js/main.js"></script>
+  </body>
+</html>
